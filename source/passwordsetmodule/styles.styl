@@ -1,0 +1,143 @@
+// noaccount styles
+#passwordset-form
+    padding: 15px
+    padding-top: mobile-header-height + 25px
+    box-sizing: border-box
+    p
+        margin 15px 0 30px 0
+    h1
+        font-size: 17pt
+
+#passwordset-form > *
+    display block
+    width 100%
+    max-width 480px
+    text-align left
+    margin-bottom 7px
+
+label
+    padding-left 5px
+
+input
+    display: block
+    font-size 12pt
+    width 100%
+    box-sizing: border-box
+    border none
+    outline: none
+    padding: 10px 5px
+    margin-bottom 20px !important
+    border-bottom solid 1px transparent
+
+input:focus
+    border-bottom solid 1px cd-dark-blue
+    padding: 10px 5px
+
+#confirmation-button
+    text-align: center
+    margin-top 30px
+    font-size 12pt
+    color #fff
+    // background-color #000
+    background-color cd-dark-blue
+    box-sizing: border-box
+    border solid 2px #fff
+    box-shadow: 0 0 5px #000
+    padding 12px 20px
+    border-radius: 10px
+
+
+
+#errorfeedback
+    display none
+    margin-top 20px
+    text-align left
+    max-width: 480px
+    box-sizing: border-box
+    padding-left 15px
+    margin-bottom 80px
+
+    .warning
+        color cd-error-red
+        font-weight: bold
+    p
+        margin 12px 0
+    ul
+        list-style-type circle
+        padding-left 20px
+    li
+        margin-bottom 7px
+    a
+        text-decoration: underline
+        color cd-light-blue
+
+#successfeedback
+    display none
+    position relative
+    padding-top: mobile-header-height + 25px
+    box-sizing: border-box
+    text-align left
+    max-width: 480px
+    box-sizing: border-box
+    padding-left 15px
+    margin-bottom 80px
+    .good
+        color cd-good-green
+        font-weight: bold
+    h2
+        margin-bottom 50px
+    p
+        margin 12px 0
+    a
+        text-decoration: underline
+        color cd-light-blue
+
+    #success-check
+        width 70px
+        height 70px
+        margin-left auto
+        margin-right 20px
+        color cd-good-green
+        position absolute
+        z-index -1
+        top mobile-header-height + 20px
+        right 20px
+        // transform: translate(-50%, -50%)
+        // box-shadow: 0 0 5px #777
+.error
+    #errorfeedback
+        display block
+    #passwordset-form
+        opacity 0.60
+    #confirmation-button
+        filter grayscale(100%)
+        opacity 0.5
+        pointer-events: none
+
+.success
+    #passwordset-form
+        display none
+    #successfeedback
+        display block
+
+@media desktopscreen
+
+    #successfeedback
+        padding-top: header-height + 50px
+        padding-left: 50px
+
+        #success-check
+            top: header-height + 20px
+            
+    #errorfeedback
+        padding-left 50px
+
+    #passwordset-form
+        padding-top: header-height + 50px
+        padding-left: 50px
+
+        p
+            margin 25px 0 50px 0
+            font-size: 13pt
+        h1
+            font-size: 20pt
