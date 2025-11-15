@@ -2,11 +2,11 @@
 export pwdSalt = "holderradio!...<3)()0981salty"
 
 ############################################################
-export urlAccessManager = "https://sentinel-access-manager-dev.dotv.ee/"
+export urlAccessManager = "https://sentinel-access-manager-dev.dotv.ee"
 
 ############################################################
-export urlSentinelDashboard = "https://sentinel-dashboard-dev.dotv.ee/"
-# export urlSentinelDashboard = "https://sentinel.ewag-handelssysteme.de/"
+export urlSentinelDashboard = "https://sentinel-dashboard-dev.dotv.ee"
+# export urlSentinelDashboard = "https://sentinel.ewag-handelssysteme.de"
 
 ############################################################
 ## local development
