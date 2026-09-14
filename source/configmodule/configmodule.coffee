@@ -16,18 +16,9 @@ export urlAccessManager = url
 ############################################################
 # Dashboard URL
 # url = "https://sentinel-dashboard-dev.dotv.ee"
-url = "https://localhost:3000"
+url = "https://localhost:3333"
 if window.location.origin == "https://sentinel-set-pwd.ewag-handelssysteme.de"
     url = "https://sentinel.ewag-handelssysteme.de"
 export urlSentinelDashboard = url
 
-
 #endregion
-
-
-
-
-############################################################
-## local development
-# export urlAccessManager = "https://localhost:6999"
-# export urlSentinelDashboard = "https://localhost:3002"

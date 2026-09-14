@@ -1,36 +1,42 @@
 // header styles
 #header
-    background-color #113
+    background-color cd-dark-blue
     color #fff
-    padding 15px 0 15px 15px
+    padding 15px
     width 100%
     box-sizing: border-box
     position fixed
     z-index 3
+    box-shadow 0 0 5px alpha(#fff, 0.2)
 
     display flex
     justify-content: flex-start
-    gap 15px
+    align-items: center
+    gap 10px
 
     h1
         font-size 18pt
-        line-height: 45px
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+        span
+            font-size 12pt
 
 #header-logo
     width: 45px
     height 45px
-    // color #000
     color cd-light-blue
-    svg
+    img
         width inherit
         height inherit
-
 
 @media desktopscreen
     #header-logo
         width: 60px
         height 60px
-
+        img
+            height inherit
+            width inherit
 
     #header
         padding 20px
@@ -39,3 +45,6 @@
         h1
             font-size 25pt
             line-height: 60px
+
+
+

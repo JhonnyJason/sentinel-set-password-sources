@@ -28,10 +28,12 @@ export initialize = ->
     code = searchParams.get("code")
     actionType = searchParams.get("action")
 
-    if !(code or actionType) then return  window.location.replace(urlSentinelDashboard);
+    if !(code or actionType) then return  window.location.replace(urlSentinelDashboard)
+
     passwordsetForm.addEventListener("submit", handleConfirmation)
 
-    sentinelDashboardLink.setAttribute("href", urlSentinelDashboard)
+    sentinelDashboardLinkSuccess.setAttribute("href", urlSentinelDashboard)
+    sentinelDashboardLinkError.setAttribute("href", urlSentinelDashboard)
     mainElement = document.getElementsByTagName("main")[0]
     
     return
